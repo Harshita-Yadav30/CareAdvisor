@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    font-size: 1.5rem;
+    background-color: rgb(138, 198, 245);
+}
+
+header h2{
+    font-size: 2rem;
+}
+
+nav{
+    display: flex;
+    gap: 0.2rem;
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    padding: 1rem;
+    border: 3px solid transparent;
+}
+
+a:hover{
+    border-color: black;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-top: 7.2rem;
+}
+
+.about-content .about-text {
+    max-width: 700px;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 2rem;
+}
+
+.about-content .about-image{
+    background-image: url(./hands.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 35rem;
+}
+
+h1{
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+hr{
+    border: 1px solid black;
+    color: black;
+    margin-top: -0.1rem;
+}
+
+.chatbot{
+    display: flex;
+    align-items: center;
+}
+
+.chatbot div{
+    text-align: center;
+}
+
+iframe{
+    padding: 0 4rem;
+    margin-right: 3rem;
+}
+
+@media (max-width: 768px) {
+    header {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      flex-wrap: wrap;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    a {
+      padding: 0.5rem;
+    }
+
+    .about-content {
+      flex-direction: column;
+      margin-top: 5rem;
+    }
+  
+    .about-content .about-image {
+      width: 100%;
+      height: 18rem;
+      margin-top: 6rem;
+    }
+
+    hr{
+        margin: 2.5rem 0;
+    }
+  
+    .about-content .about-text {
+      max-width: 100%;
+      padding: 1rem;
+      margin-top: 0;
+    }
+
+    .chatbot {
+      flex-direction: column;
+    }
+  
+    .chatbot div {
+      margin-bottom: 0;
+    }
+  
+    iframe {
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+}
